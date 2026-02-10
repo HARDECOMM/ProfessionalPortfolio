@@ -54,6 +54,7 @@ I enjoy building intelligent systems, analyzing data, and creating modern web ap
 ---
 
 ## 📂 Repository Structure
+```
 ProfessionalPortfolio/
 │
 ├─ assets/
@@ -65,6 +66,7 @@ ProfessionalPortfolio/
 ├─ scripts/ # JavaScript files
 ├─ index.html # Main portfolio page
 └─ README.md # This README file
+```
 
 ## 📩 Contact Me
 
