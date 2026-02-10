@@ -236,3 +236,35 @@ form?.addEventListener("submit", e => {
       alert("❌ Something went wrong. Please try again.");
     });
 });
+
+// =====================
+// CONTACT FORM (FETCH API)
+
+document.getElementById("contact-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
+  };
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      document.getElementById("form-success").style.display = "block";
+      form.reset();
+    } else {
+      alert("Failed to send message.");
+    }
+  } catch (err) {
+    alert("Error sending message.");
+    console.error(err);
+  }
+});

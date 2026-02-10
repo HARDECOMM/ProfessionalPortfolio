@@ -196,7 +196,6 @@
     </div>
   </section>
 
-
   <!-- GALLERY -->
   <section id="gallery" class="section gray">
     <h3>Events & Learning</h3>
@@ -342,24 +341,19 @@
       <div class="contact-form-wrapper">
         <h4>Send a Message</h4>
 
-        <!-- SUCCESS MESSAGE (hidden by default) -->
-        <div id="form-success" class="form-success">
-          <h4>✅ Message Sent!</h4>
-          <p>Thank you for reaching out. I’ll get back to you shortly.</p>
-        </div>
-
-        <!-- NETLIFY FORM -->
-        <form name="contact" method="POST" data-netlify="true" class="contact-form" id="contact-form">
-          <input type="hidden" name="form-name" value="contact" />
-
+        <form id="contact-form">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" placeholder="Your Message" required></textarea>
           <button class="btn" type="submit">Send Message</button>
         </form>
-      </div>
 
-    </div>
+        <!-- SUCCESS MESSAGE (hidden by default) -->
+        <div id="form-success" class="form-success" style="display:none;">
+          <h4>✅ Message Sent!</h4>
+          <p>Thank you for reaching out. I’ll get back to you shortly.</p>
+        </div>
+
   </section>
 
   <!-- FOOTER -->
